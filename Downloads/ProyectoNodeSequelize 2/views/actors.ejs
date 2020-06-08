@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>actorss</title>
+</head>
+  <body>
+    <h1>Listado de Actores</h1>
+    <ul>
+        <% for (let i = 0; i < actorsAll.length; i++) {  %> 
+           <li>
+              <a href="/actors/detail/<%= actorsAll[i].id %>"><%= actorsAll[i].last_name %></a>
+            </li>
+
+        <% } %> 
+    </ul>
+
+   </body>
+
+    
+</html>
